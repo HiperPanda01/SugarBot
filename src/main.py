@@ -77,7 +77,7 @@ async def on_reaction_add(reaction, user):
         if server['server_id'] == str(reaction.message.guild.id) and str(reaction.emoji) in server['banned_reactions'] and str(reaction.message.channel.id) in server['reaction_channels']:
             await reaction.remove(user)
 
-client.run(os.getenv('DISCORD_TOKEN'))
+client.run(os.getenv('DISCORD_TOKEN')) 
 
 
 
